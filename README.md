@@ -1,7 +1,11 @@
 # 星枢 NEXUS ·「后 AI 时代插件」仓库（本地待发布源）
 
-> **状态：准备期（节前备货）**。本目录是**待发布的插件源码**，对应上架方案 `docs/plugins/落地方案-AB通道-v1.md` 的**通道 A（公开仓库承载）**。
-> ⚠️ **尚未推送到任何公开平台**（师父 2026-09-28 令：先准备好，等国庆节后支付接口打通了马上开始）。
+**NEXUS post-AI plugin shelf** — specs, templates and downloadable plugins that solve real industry workflows (HR, legal, finance, healthcare, manufacturing…). Each plugin ships with a runnable tool, an output template, a self-check and a **real sample deliverable**.
+Keywords: `ai` `plugin` `automation` `workflow` `llm` `compliance` `industry` `toolkit`
+
+> 📌 **本仓库已公开（通道 A 承载）**：`https://github.com/Aichaoj/nexus-plugins`
+> 定价口径：**国内 99 元 / 国外 99 美元**（技能库条目 `price` / `priceUsd`）；上架与推广按师父口径安排在**国庆节后**支付通道打通时开始。
+> 许可：见 `LICENSE`（**专有**：可查看、可下载、可自用；禁止再分发与转售）。
 
 ---
 

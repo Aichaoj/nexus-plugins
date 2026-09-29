@@ -1,0 +1,8 @@
+# 忽略：自检临时产物、本地输出、依赖目录
+.selfcheck-out/
+out/
+node_modules/
+*.local
+*.log
+.DS_Store
+Thumbs.db

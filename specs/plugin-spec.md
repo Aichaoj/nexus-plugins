@@ -58,7 +58,24 @@ dir samples                   # ② 必须能看到真实样例出件物
 Select-String -Path .\**\* -Pattern 'api[_-]?key|secret|password' -SimpleMatch   # ③ 包里不许有明文凭据
 ```
 
-## 七、上架前还要过的两关（节后做）
+## 七、公开范围（**C 口径**，2026-09-29 师父定；推送闸门强制）
+
+| 内容 | 打样件（`s15-onboarding-compliance`） | 后续插件（其余各条） |
+|---|---|---|
+| `SKILL.md` / `README.md` | 公开 | 公开 |
+| `samples/`（含样例出件物） | 公开 | 公开 |
+| `CHANGELOG.md` | 公开 | 公开 |
+| `tools/`（实现） | **公开**（样板） | 🔒 **不得公开** |
+| `templates/`（出件模板） | 公开 | 🔒 不得公开 |
+| 接入/落地方案 | 🔒 付费交付 | 🔒 付费交付 |
+
+**做新插件的正确流程（按 C 口径）**：
+1. 在**工作区**里完成完整插件包（含 `tools/`、`templates/`）并自测通过；
+2. 生成**公开版**目录（只含 `SKILL.md` / `README.md` / `samples/` / `CHANGELOG.md`）放进 `plugins-src/plugins/<编号>-<名>/`；
+3. 推送前跑 `pwsh -File tools\publish-plugins-to-github.ps1 -Mode scan` —— **除打样件外的 `tools/` 一律会被闸门拦下**；
+4. 实现与模板随技能库付费内容交付（`planZh/planEn` 里写清获取方式）。
+
+## 八、上架前还要过的两关（节后做）
 
 1. **商家署名**：条目一律以 **daai** 提交（`submitterName=daai`），分账对象也是 daai；
 2. **付费内容四段**：`detailZh / detailEn / planZh / planEn`（各 ≤4000 字）齐备，其中 `planZh/planEn` 写清**下载页地址与安装口令**（通道 B）。
